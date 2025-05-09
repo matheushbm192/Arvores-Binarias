@@ -5,11 +5,14 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Arvore<Integer> arvore = new Arvore<>();
-        arvore.add(20);
         arvore.add(15);
-        arvore.add(17);
-        arvore.add(25);
-        arvore.add(14);
-        arvore.add(18);
+        arvore.add(8);
+        arvore.add(2);
+        arvore.add(12);
+        arvore.add(23);
+        arvore.add(20);
+        arvore.add(30);
+        int num = 30;
+        arvore.removeNo(20);
     }
 }
