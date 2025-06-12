@@ -90,6 +90,22 @@ public class Arvore<E> {
         return raiz;
     }
 
+    public int exibirArvorePreOdem(No<E> raiz,int contador){
+
+       if(raiz == null)return 0;
+       contador += 1;
+       exibirArvorePreOdem(raiz.anterior, contador);
+       exibirArvorePreOdem(raiz.proximo, contador);
+    return contador;
+    }
+
+    public int contarNosNaoFolhas(No<E> raiz){
+        int numNos = 0;
+
+
+        return numNos;
+    }
+
 
     public static class No<T> {
         T elemento;
